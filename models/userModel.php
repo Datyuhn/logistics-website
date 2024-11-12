@@ -10,7 +10,7 @@ class UserModel {
     $this->conn = $database->getConnection();
   }
 
-  public function createUser($fullname, $email, $phone, $password, $address) {
+  public function createUser($fullname, $email, $phone, $password, $address): int {
     $query = "INSERT INTO " . $this->table_name . " (fullname, email, phone, password, address) VALUES (?, ?, ?, ?, ?)";
     $stmt = $this->conn->prepare($query);
     // $hashed_password = password_hash($password, PASSWORD_BCRYPT);

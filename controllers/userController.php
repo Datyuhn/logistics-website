@@ -8,7 +8,7 @@ class UserController {
     $this->userModel = new UserModel();
   }
 
-  public function register($fullname, $email, $phone, $password, $address) {
+  public function register($fullname, $email, $phone, $password, $address): int {
     return $this->userModel->createUser($fullname, $email, $phone, $password, $address);
   }
 

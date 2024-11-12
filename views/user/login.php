@@ -35,34 +35,28 @@
 <body class="text-center">
   <div class="form-signin border">
     <main>
-      <form action="../../controllers/register.php" method="POST">
+      <form action="../../controllers/login.php" method="POST">
         <img src="../../assets/logistics-logo.jpg" alt="" width="120" height="120">
-        <h1 class="h3 mb-3 fw-normal">Register</h1>
+        <h1 class="h3 mb-3 fw-normal">Please log in</h1>
 
         <div class="form-floating mb-2">
-          <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname" required>
-          <label for="fullname">Fullname</label>
+          <input type="email" class="form-control" name="email" id="floatingInput" placeholder="Email" required>
+          <label for="floatingInput">Email</label>
         </div>
-        <div class="form-floating mb-2">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-          <label for="Email">Email</label>
-        </div>
-        <div class="form-floating mb-2">
-          <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone number" required>
-          <label for="floatingInput">Phone number</label>
-        </div>
-        <div class="form-floating mb-2">
-          <input type="text" class="form-control" name="address" id="address" placeholder="Address" required>
-          <label for="floatingInput">Address</label>
-        </div>
-        <div class="form-floating mb-2">
+        <div class="form-floating">
           <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" required>
           <label for="floatingPassword">Password</label>
         </div>
-        <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Sign up</button>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Log in</button>
         <div class="d-flex justify-content-around">
-          <label for="login">Have an account?</label>
-          <a href="./login.php" id="login">Sign in</a>
+          <label for="register">Don't have an account?</label>
+          <a href="./register.php" id="register">Register</a>
         </div>
       </form>
     </main>
