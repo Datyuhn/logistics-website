@@ -10,8 +10,8 @@
   <title>Logistics Website</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+  <link href="/logistics-website/assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     .bd-placeholder-img {
@@ -29,14 +29,14 @@
     }
   </style>
 
-  <link href="../../styles/signin.css" rel="stylesheet">
+  <link href="/logistics-website/public/css/signin.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
   <div class="form-signin border">
     <main>
-      <form action="../../controllers/login.php" method="POST">
-        <img src="../../assets/logistics-logo.jpg" alt="" width="120" height="120">
+      <form action="" method="POST">
+        <img src="public/images/logistics-logo.jpg" alt="" width="120" height="120">
         <h1 class="h3 mb-3 fw-normal">Please log in</h1>
 
         <div class="form-floating mb-2">
@@ -53,14 +53,17 @@
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Log in</button>
+        <button class="w-100 btn btn-lg btn-primary mb-3" name="btn-login" type="submit">Log in</button>
         <div class="d-flex justify-content-around">
           <label for="register">Don't have an account?</label>
-          <a href="./register.php" id="register">Register</a>
+          <a href="index.php?page=register" id="register">Register</a>
         </div>
       </form>
     </main>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-IhjqBgnr6x0ZXvVRKhuiwFQ5GO2nKZgFSPfUZFLp37i6qG/q3Fx3Fhyjc1GxNB1j" crossorigin="anonymous"></script>
+  <script src="/logistics-website/assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

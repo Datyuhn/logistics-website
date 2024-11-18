@@ -1,5 +1,5 @@
 <?php
-require_once '../controllers/userController.php';
+require_once __DIR__ . '/controllers/UserController.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $fullname = $_POST['fullname'];
@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $address = $_POST['address'];
 
   $userController = new UserController();
-  $result = $userController->register($fullname, $email, $phone, $password, $address);
+  $result = $userController->registerProcess($fullname, $email, $phone, $password, $address);
 
   if ($result) {
     echo "Registration successful!";
@@ -17,4 +17,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Error occurred during registration!";
   }
 }
-?>

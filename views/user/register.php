@@ -29,14 +29,14 @@
     }
   </style>
 
-  <link href="../../styles/signin.css" rel="stylesheet">
+  <link href="../../public/css/signin.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
   <div class="form-signin border">
     <main>
-      <form action="../../controllers/register.php" method="POST">
-        <img src="../../assets/logistics-logo.jpg" alt="" width="120" height="120">
+      <form action="/register/submit" method="POST">
+        <img src="../../public/images/logistics-logo.jpg" alt="" width="120" height="120">
         <h1 class="h3 mb-3 fw-normal">Register</h1>
 
         <div class="form-floating mb-2">
@@ -62,7 +62,7 @@
         <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Sign up</button>
         <div class="d-flex justify-content-around">
           <label for="login">Have an account?</label>
-          <a href="./login.php" id="login">Sign in</a>
+          <a href="/login" id="login">Sign in</a>
         </div>
       </form>
     </main>
