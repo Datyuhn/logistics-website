@@ -18,35 +18,15 @@ if (isset($_GET['page'])) {
 if ($page == 'login') {
   $controller = new UserController();
   $controller->login();
-} 
-elseif ($page == 'logout') {
+} elseif ($page == 'logout') {
   $controller = new UserController();
   $controller->logout();
-}
-else {
+} elseif ($page == 'order') {
+  require_once __DIR__ . '/views/order/orderRegister.php';
+} else {
   include_once 'views/home/home.php';
 }
 
-
-// if ($uri == '/') {
-//   require_once __DIR__ . '/views/home/home.php';
-// } 
-// elseif ($uri == '/login') {
-//   $controller = new UserController();
-//   $controller->loginPage();
-// } 
-// elseif ($uri == '/login/submit') {
-//   $controller = new UserController();
-//   $controller->login();
-// } 
-// elseif ($uri == '/register') {
-//   $controller = new UserController();
-//   $controller->registerPage();
-// } 
-// elseif ($uri == '/register/submit') {
-//   $controller = new UserController();
-//   $controller->register();
-// }
 // elseif ($uri == '/driver/register') {
 // $controller = new DriverController();
 // $controller->register();

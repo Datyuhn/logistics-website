@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.84.0">
-  <title>Carousel Template · Bootstrap v5.0</title>
+  <title>Logistics Website</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
   <link href="/logistics-website/assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
   <link href="/logistics-website/public/css/carousel.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: white !important;">
   <?php include 'views/navbar.php'; ?>
   <main>
 
@@ -44,44 +44,46 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777" />
-          </svg>
-
+          <div class="position-relative">
+            <img src="public/images/img01.jpg" class="w-100" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.4;"></div>
+          </div>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p>Some representative placeholder content for the first slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              <h1>Nhanh Chóng - An Toàn - Tin Cậy: Dịch Vụ Giao Hàng Hàng Đầu!</h1>
+              <p>Vận chuyển chuyên nghiệp với thời gian giao hàng nhanh nhất. Cam kết an toàn cho mọi đơn hàng của bạn.</p>
+              <p><a class="btn btn-lg btn-primary" href="index.php?page=order">Đăng kí ngay</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777" />
-          </svg>
-
+          <div class="position-relative">
+            <img src="public/images/img02.jpg" class="w-100" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.4;"></div>
+          </div>
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Some representative placeholder content for the second slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <h1>Giao Hàng Dễ Dàng, Đưa Thế Giới Đến Gần Bạn Hơn!</h1>
+              <p>Dễ dàng đặt giao hàng chỉ với vài cú nhấp chuột. Chúng tôi luôn đồng hành cùng bạn!</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Tìm hiểu thêm</a></p>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777" />
-          </svg>
 
+        <div class="carousel-item">
+          <div class="position-relative">
+            <img src="public/images/img03.jpg" class="w-100" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.4;"></div>
+          </div>
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>One more for good measure.</h1>
-              <p>Some representative placeholder content for the third slide of this carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              <h1>Tối Ưu Hành Trình, Giao Trọn Niềm Tin!</h1>
+              <p>Từ hàng nhỏ đến lô hàng lớn, dịch vụ của chúng tôi đều đảm bảo tiết kiệm và hiệu quả.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Về chúng tôi</a></p>
             </div>
           </div>
         </div>
+
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -95,18 +97,18 @@
 
     <div class="container marketing">
 
-      <div class="row">
+      <div class="row text-danger">
         <div class="col-lg-4">
-          <h2>1.500.000</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          <h1>>5.000</h1>
+          <p>Tài xế chuyên nghiệp và nhiệt huyết.</p>
         </div>
         <div class="col-lg-4">
-          <h2>120.000</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          <h1>>10.000.000</h1>
+          <p>Đơn hàng được vân chuyển thành công mỗi năm.</p>
         </div>
         <div class="col-lg-4">
-          <h2>95%</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          <h1>98%</h1>
+          <p>Đơn hàng được giao đúng thời hạn trên toàn quốc.</p>
         </div>
       </div>
 
@@ -117,58 +119,30 @@
             <div class="col-12">
               <div class="intro">
                 <h2 class="text-center mb-5"><strong>Dịch vụ của chúng tôi</strong></h2>
-                <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                  roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                <p class="mx-auto">Chúng tôi cung cấp giải pháp giao hàng toàn diện, đáp ứng mọi nhu cầu vận chuyển của bạn.</p>
               </div>
             </div>
           </div>
           <div class="row g-4">
             <div class="col-lg-4 col-md-6">
               <div class="service">
-                <img src="img/icon1.png" alt="">
-                <h5>Digital Marketing</h5>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                  classical Latin literature from</p>
+                <img src="public/images/giaohoatoc.jpg" alt="" style="max-width: 40%" class="py-5">
+                <h5>Giao hàng hỏa tốc</h5>
+                <p>Đảm bảo giao hàng trong ngày với tốc độ và độ chính xác cao.</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
               <div class="service">
-                <img src="img/icon2.png" alt="">
-                <h5>Logo Designing</h5>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                  classical Latin literature from</p>
+                <img src="public/images/giaonhanh.jpg" alt="" style="max-width: 40%" class="py-5">
+                <h5>Giao hàng nhanh</h5>
+                <p>Cung cấp dịch vụ vận chuyển với chi phí cạnh tranh và thời gian giao hàng tối ưu.</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
               <div class="service">
-                <img src="img/icon3.png" alt="">
-                <h5>Buisness consulting</h5>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                  classical Latin literature from</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="service">
-                <img src="img/icon4.png" alt="">
-                <h5>Videography</h5>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                  classical Latin literature from</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="service">
-                <img src="img/icon5.png" alt="">
-                <h5>Brand Identity</h5>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                  classical Latin literature from</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="service">
-                <img src="img/icon6.png" alt="">
-                <h5>Ethical Hacking</h5>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                  classical Latin literature from</p>
+                <img src="public/images/giaotietkiem.jpg" alt="" style="max-width: 40%" class="py-5">
+                <h5>Giao hàng tiết kiệm</h5>
+                <p>Đảm nhận vận chuyển hàng hóa với chi phí tối thiểu, hiệu quả tối đa.</p>
               </div>
             </div>
           </div>
@@ -176,52 +150,40 @@
       </section>
 
       <hr class="featurette-divider">
-      <h2 class="text-center"><strong>Giải pháp</strong></h2>
+      <h2 class="text-center"><strong>Vì sao nên chọn chúng tôi</strong></h2>
 
       <div class="album py-5 bg-light">
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                </svg>
-
+                <img src="public/images/img04.jpg" alt="">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-text pb-4">Giao hàng đúng hẹn, đảm bảo an toàn tuyệt đối cho mọi đơn hàng.</h5>
                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-md btn-outline-danger col-6">View</button>
+                    <button type="button" class="btn btn-md btn-outline-danger col-6">Xem</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                </svg>
-
+                <img src="public/images/img05.jpg" alt="">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-text pb-4">Dịch vụ vận chuyển với chi phí cạnh tranh, tối ưu ngân sách.</h5>
                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-md btn-outline-danger col-6">View</button>
+                    <button type="button" class="btn btn-md btn-outline-danger col-6">Xem</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                </svg>
-
+                <img src="public/images/img06.jpg" alt="">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-text pb-4">Hỗ trợ khách hàng 24/7 với đội ngũ chuyên nghiệp và tận tâm.</h5>
                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-md btn-outline-danger col-6">View</button>
+                    <button type="button" class="btn btn-md btn-outline-danger col-6">Xem</button>
                   </div>
                 </div>
               </div>
@@ -234,15 +196,10 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+          <h2 class="featurette-heading">Công Nghệ Hiện Đại. <span class="text-muted">Theo dõi đơn hàng trực tuyến và cập nhật trạng thái thời gian thực.</span></h2>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
+          <img src="public/images/img07.jpg" width="400" height="400" alt="">
         </div>
       </div>
 
@@ -250,15 +207,10 @@
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+          <h2 class="featurette-heading">Mạng Lưới Rộng Khắp. <span class="text-muted">Phủ sóng dịch vụ trên toàn quốc và quốc tế</span></h2>
         </div>
         <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
+          <img src="public/images/img08.jpg" width="400" height="400" alt="">
         </div>
       </div>
 
@@ -266,57 +218,43 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+          <h2 class="featurette-heading">Linh Hoạt Đa Dịch Vụ. <span class="text-muted">Đáp ứng mọi nhu cầu, từ hàng nhỏ lẻ đến vận chuyển quy mô lớn.</span></h2>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
+          <img src="public/images/img09.jpg" width="400" height="400" alt="">
         </div>
       </div>
 
       <hr class="featurette-divider">
-      <h2 class="text-center"><strong>Các bước</strong></h2>
+      <h2 class="text-center"><strong>Bắt đầu gửi hàng ngay</strong></h2>
 
       <div class="album py-5 bg-light">
         <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="margin-left: 40px;">
             <div class="col">
               <div class="card shadow-sm col-10">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="275" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <img src="public/images/step1.jpg" width="100%" height="275" alt="">
+                <div class="card-body text-center">
+                  <h3>Tạo tài khoản</h3>
+                  <p class="card-text">Bắt đầu gửi hàng chưa đầy 2 phút.</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm col-10">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="275" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <img src="public/images/step2.jpg" width="100%" height="275" alt="">
+                <div class="card-body text-center">
+                  <h3>Gửi hàng</h3>
+                  <p class="card-text">Đăng ký gửi hàng trực tuyến với nhiều lựa chọn dịch vụ.</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm col-10">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="275" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <img src="public/images/step3.jpg" width="100%" height="275" alt="">
+                <div class="card-body text-center">
+                  <h3>Theo dõi đơn hàng</h3>
+                  <p clas s="card-text">Theo dõi đơn hàng của bạn theo thời gian thực.</p>
                 </div>
               </div>
             </div>
@@ -327,11 +265,8 @@
         <a class="btn btn-lg btn-danger px-5 m-auto col-4">Đăng ký làm tài xế</a>
       </div>
     </div>
+    <?php include 'views/footer.php'; ?>
 
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-IhjqBgnr6x0ZXvVRKhuiwFQ5GO2nKZgFSPfUZFLp37i6qG/q3Fx3Fhyjc1GxNB1j" crossorigin="anonymous"></script>

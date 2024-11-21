@@ -10,16 +10,6 @@ class UserController
     $this->userModel = new UserModel();
   }
 
-  public function login()
-  {
-    if (isset($_POST['btn-login'])) {
-      $this->loginProcess();
-    } else {
-      include_once 'views/user/login.php';
-      // echo $page;
-    }
-  }
-
   public function register()
   {
     require_once __DIR__ . '/views/user/register.php';
@@ -34,6 +24,16 @@ class UserController
     $address = $_POST['address'];
 
     return $this->userModel->createUser($fullname, $email, $phone, $password, $address);
+  }
+
+  public function login()
+  {
+    if (isset($_POST['btn-login'])) {
+      $this->loginProcess();
+    } else {
+      include_once 'views/user/login.php';
+      // echo $page;
+    }
   }
 
   public function loginProcess()
@@ -59,4 +59,5 @@ class UserController
     unset($_SESSION["username"]);
     header('Location: index.php?page=home');
   }
+  
 }
