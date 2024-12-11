@@ -81,7 +81,7 @@
               </div>
 
               <div class="col-12">
-                <label for="phone" class="form-label">Số Điện Thoại</label>
+                <label for="phone" class="form-label">Số Điện Thoại người nhận</label>
                 <input type="text" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
                 <div class="invalid-feedback">
                   Vui lòng nhập số điện thoại.
@@ -115,7 +115,7 @@
                   <option value="">Chọn dịch vụ...</option>
                   <option>Giao hàng tiêu chuẩn</option>
                   <option>Giao hàng nhanh</option>
-                  <option>Giao hàng trong ngày</option>
+                  <option>Giao hàng hoả tốc</option>
                 </select>
                 <div class="invalid-feedback">
                   Vui lòng chọn loại hình dịch vụ.
@@ -124,7 +124,7 @@
             </div>
 
             <hr class="my-4">
-            <button class="w-100 btn btn-primary btn-lg" type="submit">Gửi Đơn Hàng</button>
+            <button class="w-100 btn btn-primary btn-lg" name="btn-create-order" type="submit">Gửi Đơn Hàng</button>
           </form>
         </div>
       </div>

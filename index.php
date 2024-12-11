@@ -8,7 +8,6 @@ require_once __DIR__ . '/controllers/OrderController.php';
 require_once __DIR__ . '/controllers/ProductController.php';
 require_once __DIR__ . '/controllers/ServiceController.php';
 
-
 if (isset($_GET['page'])) {
   $page = $_GET['page'];
 } else {
@@ -18,6 +17,9 @@ if (isset($_GET['page'])) {
 if ($page == 'login') {
   $controller = new UserController();
   $controller->login();
+} elseif ($page == 'register') {
+  $controller = new UserController();
+  $controller->register();
 } elseif ($page == 'logout') {
   $controller = new UserController();
   $controller->logout();

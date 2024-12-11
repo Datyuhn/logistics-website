@@ -35,7 +35,7 @@
 <body class="text-center">
   <div class="form-signin border">
     <main>
-      <form action="/register/submit" method="POST">
+      <form action="" method="POST">
         <img src="../../public/images/logistics-logo.jpg" alt="" width="120" height="120">
         <h1 class="h3 mb-3 fw-normal">Register</h1>
 
@@ -59,10 +59,10 @@
           <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" required>
           <label for="floatingPassword">Password</label>
         </div>
-        <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Sign up</button>
+        <button class="w-100 btn btn-lg btn-primary mb-3" name="btn-register" type="submit">Sign up</button>
         <div class="d-flex justify-content-around">
           <label for="login">Have an account?</label>
-          <a href="/login" id="login">Sign in</a>
+          <a href="index.php?page=login" id="login">Sign in</a>
         </div>
       </form>
     </main>
