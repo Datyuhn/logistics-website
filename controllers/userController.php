@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/../models/userModel.php';
-
 class UserController
 {
   private $userModel;
@@ -24,33 +23,11 @@ class UserController
     $fullname = $_POST['fullname'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-    $password = $_POST['password'];
     $address = $_POST['address'];
+    $password = $_POST['password'];
 
-    if (empty($fullname) || empty($email) || empty($phone) || empty($password) || empty($address)) {
-      $_SESSION['error'] = 'All fields are required.';
-      include_once 'views/user/register.php';
-      return;
-    }
-
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $_SESSION['error'] = 'Invalid email format.';
-      include_once 'views/user/register.php';
-      return;
-    }
-
-    if (!preg_match('/^[0-9]{10,15}$/', $phone)) {
-      $_SESSION['error'] = 'Phone number must be between 10 to 15 digits.';
-      include_once 'views/user/register.php';
-      return;
-    }
-
-    if ($this->userModel->createUser($fullname, $email, $phone, $password, $address)) {
-      header("Location: index.php?page=login");
-    } else {
-      $_SESSION['error'] = 'Failed to create account. Email or phone may already exist.';
-      include_once 'views/user/register.php';
-    }
+    $this->userModel->createUser($fullname, $email, $phone, $password, $address);
+    header('Location: index.php?page=login');
   }
 
   public function login()

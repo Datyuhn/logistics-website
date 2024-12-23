@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarsExample07">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              <a class="nav-link active" aria-current="page" href="index.php?page=home">Trang chủ</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false">Dịch vụ</a>
@@ -58,7 +58,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tra cứu đơn hàng</a>
+              <a class="nav-link" href="index.php?page=myOrders">Đơn hàng của tôi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Hỗ trợ</a>
